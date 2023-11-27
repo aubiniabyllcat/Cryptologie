@@ -17,9 +17,14 @@ Entrez la valeur de décalage souhaitée pour le chiffrement César.
 5. Voir le Résultat :
 Le programme affichera le message encrypté ou décrypté en fonction de votre choix et de votre saisie.
  Exemple message encrypté![Capture d’écran (77)](https://github.com/aubiniabyllcat/cesarchiffrement/assets/140092517/9eb5007f-db2f-4de9-b9e5-92df1f6d0bf1)
+ Exemple message décrypté![Capture d’écran (78)](https://github.com/aubiniabyllcat/cesarchiffrement/assets/140092517/f527cb59-7fa5-4d27-917d-ce204d382a52)
 
+7. Fonctions
+ChiffrementCesar
+Cette fonction prend un message et une valeur de décalage en entrée et renvoie le message encrypté ou décrypté en utilisant l'algorithme du chiffrement César.
+
+string chiffrementCesar(const string& message, int decalage);
    
-![image](https://github.com/aubiniabyllcat/cesarchiffrement/assets/140092517/f7567034-b226-4e91-804f-80a5bac0bd18)
 
 
    
