@@ -64,6 +64,10 @@ Chiffrement : Pour chiffrer, on utilise la table de substitution pour remplacer 
 Déchiffrement : Pour déchiffrer, on utilise la même table de substitution en sens inverse.
 
 Exemple de code:
+Entrez la cle : MAISON
+Entrez le message en majuscules : SOYONS PATIENTS
+Message chiffre : RVJVWR UMQOIWQR
+Message dechiffre : SOYONS PATIENTS
 
 ##Comment utiliser le code
 Compilez et exécutez le programme.
