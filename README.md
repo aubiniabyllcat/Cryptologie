@@ -30,7 +30,7 @@ Cette fonction prend un message et une valeur de décalage en entrée et renvoie
 string chiffrementCesar(const string& message, int decalage);
    
 
-#Chiffrement/Déchiffrement affine
+# Chiffrement/Déchiffrement affine
 
 Ce programme en C++ met en œuvre le chiffrement et le déchiffrement affine, une technique de chiffrement monoalphabétique utilisant une fonction mathématique linéaire.
 
@@ -49,7 +49,7 @@ S'assurer que les coefficients a et b satisfont aux conditions nécessaires pour
 Le programme vérifie également que a est non nul et premier entre eux avec 26.
 
 # Chiffrement/Déchiffrement garnet
-##Explication
+Explication
 Le chiffrement de Garnet Wolseley est une technique de chiffrement par substitution réversible qui tire son nom du général britannique Garnet Joseph Wolseley du XVIIIe siècle. Bien que l'on ne soit pas certain que Wolseley soit l'inventeur de ce chiffre, son utilisation est attestée.
 
 Principe
