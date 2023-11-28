@@ -19,8 +19,10 @@ Le programme affichera le message encrypté ou décrypté en fonction de votre c
  Exemple message encrypté
 Ici on chiffre le mot bonjour![Capture d’écran (77)](https://github.com/aubiniabyllcat/cesarchiffrement/assets/140092517/9eb5007f-db2f-4de9-b9e5-92df1f6d0bf1)
  ici on déchiffre erqmrxu qui donne bonjourExemple message décrypté
+![Capture d’écran (81)](https://github.com/aubiniabyllcat/Cryptologie/assets/140092517/2da303d8-6caa-4b34-a865-ca63095a8f97)
 
-Le code fonctionne parfaitement
+
+Le code fonctionne parfaitement.
 7. Fonctions
 ChiffrementCesar
 Cette fonction prend un message et une valeur de décalage en entrée et renvoie le message encrypté ou décrypté en utilisant l'algorithme du chiffrement César.
