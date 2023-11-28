@@ -18,7 +18,7 @@ Entrez la valeur de décalage souhaitée pour le chiffrement César.
 Le programme affichera le message encrypté ou décrypté en fonction de votre choix et de votre saisie.
  Exemple message encrypté
 Ici on chiffre le mot bonjour![Capture d’écran (77)](https://github.com/aubiniabyllcat/cesarchiffrement/assets/140092517/9eb5007f-db2f-4de9-b9e5-92df1f6d0bf1)
- ici on déchiffre erqmrxu qui donne bonjourExemple message décrypté![Capture d’écran (80)](https://github.com/aubiniabyllcat/Cryptologie/assets/140092517/2b69e226-0e8a-4824-957f-f3039bd0e22a)
+ ici on déchiffre erqmrxu qui donne bonjourExemple message décrypté
 
 Le code fonctionne parfaitement
 7. Fonctions
