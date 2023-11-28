@@ -66,7 +66,7 @@ Déchiffrement : Pour déchiffrer, on utilise la même table de substitution en 
 Exemple de code:
 Entrez la cle : MAISON
 Entrez le message en majuscules : SOYONS PATIENTS
-Message chiffre : RVJVWR UMQOIWQR
+Message chiffre :  VUAUT CYNXLTNV
 Message dechiffre : SOYONS PATIENTS
 
 ##Comment utiliser le code
