@@ -18,11 +18,12 @@ Entrez la valeur de décalage souhaitée pour le chiffrement César.
 Le programme affichera le message encrypté ou décrypté en fonction de votre choix et de votre saisie.
  Exemple message encrypté
 Ici on chiffre le mot bonjour![Capture d’écran (77)](https://github.com/aubiniabyllcat/cesarchiffrement/assets/140092517/9eb5007f-db2f-4de9-b9e5-92df1f6d0bf1)
- ici on déchiffre erqmrxu qui donne bonjourExemple message décrypté
-![Capture d’écran (81)](https://github.com/aubiniabyllcat/Cryptologie/assets/140092517/2da303d8-6caa-4b34-a865-ca63095a8f97)
+ Exemple message décrypté
+![Capture d’écran (78)](https://github.com/aubiniabyllcat/Cryptologie/assets/140092517/56be142e-325a-46fa-86ae-0af531e3a313)
 
-
+ici on déchiffre erqmrxu qui donne bonjour
 Le code fonctionne parfaitement.
+
 7. Fonctions
 ChiffrementCesar
 Cette fonction prend un message et une valeur de décalage en entrée et renvoie le message encrypté ou décrypté en utilisant l'algorithme du chiffrement César.
@@ -47,7 +48,7 @@ Notes
 S'assurer que les coefficients a et b satisfont aux conditions nécessaires pour un chiffrement et un déchiffrement corrects.
 Le programme vérifie également que a est non nul et premier entre eux avec 26.
 
-#Chiffrement/Déchiffrement garnet
+# Chiffrement/Déchiffrement garnet
 ##Explication
 Le chiffrement de Garnet Wolseley est une technique de chiffrement par substitution réversible qui tire son nom du général britannique Garnet Joseph Wolseley du XVIIIe siècle. Bien que l'on ne soit pas certain que Wolseley soit l'inventeur de ce chiffre, son utilisation est attestée.
 
