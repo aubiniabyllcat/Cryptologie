@@ -101,6 +101,21 @@ Création de la table de substitution : On écrit dans l'ordre le reste de l'alp
 Chiffrement : Pour chiffrer, on utilise la table de substitution pour remplacer chaque lettre du message en clair.
 
 Déchiffrement : Pour déchiffrer, on utilise la même table de substitution en sens inverse.
+Fonction
+string GarnetWolseleyCipher::decrypt(const string& message) const {
+    string decryptedMessage = "";
+    for (char c : message) {
+        if (isalpha(c)) {
+            size_t index = substitutionTable.find(toupper(c));
+            char decryptedChar = alphabet[index];
+            decryptedMessage += islower(c) ? tolower(decryptedChar) : decryptedChar;
+        } else {
+            decryptedMessage += c;
+        }
+    }
+    return decryptedMessage;
+}
+Cette fonction est utilisée pour déchiffrer le message crypté en premenant en paramètre le message.
 
 Exemple de code:
 Entrez la cle : MAISON
