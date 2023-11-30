@@ -1,3 +1,10 @@
+# Introduction
+
+Ce projet implémente trois algorithmes de chiffrement : le chiffrement César, le chiffrement affine et le chiffrement de Garnet Wolseley.
+
+Le chiffrement César(main.cpp) est un chiffrement de substitution simple où chaque lettre du texte brut est décalée d'un certain nombre de positions vers le haut ou vers le bas de l'alphabet.
+Le chiffrement affine(affine.cpp) est une technique de chiffrement monoalphabétique utilisant une fonction mathématique linéaire.
+Le chiffrement de Garnet Wolseley(garnet.cpp) est une technique de chiffrement par substitution réversible.
 # Chiffrement/Déchiffrement César
 
 Ce programme en C++ implémente l'algorithme du chiffrement César pour encrypter et décrypter des messages. 
@@ -26,8 +33,20 @@ Le code fonctionne parfaitement.
 
 7. Fonctions
 ChiffrementCesar
+string chiffrementCesar(const string& message, int decalage) {
+   string resultat = "" ;
+    for (char lettre : message) {
+        if(isalpha(lettre)) {
+            char base = (isupper(lettre)) ? 'A' : 'a';
+            resultat += static_cast<char>((lettre-base+decalage)%26 +base);
+        } else {
+            resultat += lettre ;
+        }
+    }
+    return resultat ;
+}
 Cette fonction prend un message et une valeur de décalage en entrée et renvoie le message encrypté ou décrypté en utilisant l'algorithme du chiffrement César.
-string chiffrementCesar(const string& message, int decalage);
+
    
 
 # Chiffrement/Déchiffrement affine
