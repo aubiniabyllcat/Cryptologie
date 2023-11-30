@@ -1,5 +1,3 @@
-# Introduction
-
 Ce projet implémente trois algorithmes de chiffrement : le chiffrement César, le chiffrement affine et le chiffrement de Garnet Wolseley.
 
 Le chiffrement César(main.cpp) est un chiffrement de substitution simple où chaque lettre du texte brut est décalée d'un certain nombre de positions vers le haut ou vers le bas de l'alphabet.
@@ -45,7 +43,7 @@ string chiffrementCesar(const string& message, int decalage) {
     }
     return resultat ;
 }
-Cette fonction prend un message et une valeur de décalage en entrée et renvoie le message encrypté ou décrypté en utilisant l'algorithme du chiffrement César.
+Cette fonction prend un message et une valeur de décalage en entrée et renvoie le message encrypté  en utilisant l'algorithme du chiffrement César.
 
    
 
@@ -63,6 +61,28 @@ b peut être une valeur entière arbitraire.
 Résultats : Le programme affiche le message chiffré et le déchiffre pour vous.
 ![Capture d’écran (81)](https://github.com/aubiniabyllcat/Cryptologie/assets/140092517/fd0e74f8-ad60-457b-b885-d53078980e9e)
 
+Fonction
+string chiffrementAffine(const string &message, int a, int b) {
+    string cipherText = "";
+
+    for (char c : message) {
+        if (isalpha(c)) {
+            char encryptedChar;
+            if (isupper(c)) {
+                encryptedChar = (a * (c - 'A') + b) % 26 + 'A';
+            } else {
+                encryptedChar = (a * (c - 'a') + b) % 26 + 'a';
+            }
+            cipherText += encryptedChar;
+        } else {
+            cipherText += c;
+        }
+    }
+
+    return cipherText;
+}
+Cette fonction prend un message et deux entiers a et b en entrée et renvoie le message encrypté en utilisant cet algorithme.
+
 Notes
 S'assurer que les coefficients a et b satisfont aux conditions nécessaires pour un chiffrement et un déchiffrement corrects.
 Le programme vérifie également que a est non nul et premier entre eux avec 26.
@@ -74,7 +94,7 @@ Le chiffrement de Garnet Wolseley est une technique de chiffrement par substitut
 Principe
 Suppression d'une lettre de l'alphabet : On commence par supprimer une lettre de l'alphabet. En français, on supprime la lettre "W" (remplacée si nécessaire par deux "V").
 
-Choix d'une clé : Ensuite, on choisit une clé (par exemple, "PARDON".
+Choix d'une clé : Ensuite, on choisit une clé (par exemple, "PARDON").
 
 Création de la table de substitution : On écrit dans l'ordre le reste de l'alphabet sans la lettre supprimée. Ensuite, on écrit cette séquence de lettres mais dans l'ordre inverse pour créer la table de substitution.
 
